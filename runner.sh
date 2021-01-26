@@ -4,8 +4,7 @@ set -x
 
 umask 077
 cat > /etc/cloudflare_credentials.ini <<EOF
-dns_cloudflare_email = $EMAIL
-dns_cloudflare_api_key = $API_KEY
+dns_cloudflare_api_token = $API_TOKEN
 EOF
 
 while true; do
